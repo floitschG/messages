@@ -182,10 +182,3 @@ function parseMessages(str) {
   }
   return result;
 }
-
-var request = new XMLHttpRequest();
-request.addEventListener("load", function() {
-  console.log(parseMessages(this.responseText));
-});
-request.open("GET", "http://localhost:8000/dart2js_messages.dart");
-request.send();
